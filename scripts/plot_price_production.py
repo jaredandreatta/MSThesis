@@ -31,29 +31,6 @@ metals = {
     }
 }
 
-metals = {
-    'cobalt': {
-        'price': 'cobalt_unit_value_usd_t',
-        'production': 'cobalt_world_mine_production'
-    },
-    'graphite': {
-        'price': 'graphite_unit_value_usd_t',
-        'production': 'graphite_world_production'
-    },
-    'lithium': {
-        'price': 'lithium_unit_value_usd_t',
-        'production': 'lithium_world_production_lithium_content'
-    },
-    'nickel': {
-        'price': 'nickel_unit_value__usd_t',
-        'production': 'nickel_world_production'
-    },
-    'manganese': {
-        'price': 'manganese_unit_value_usd_t',
-        'production': 'manganese_world_production'
-    }
-}
-
 fig, axes = plt.subplots(nrows=5, ncols=1, figsize=(10, 14), sharex=True)
 axes.flatten()
 for ax, (metal, cols) in zip(axes, metals.items()):
